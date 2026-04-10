@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-fe
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-fe
+  template:
+    metadata:
+      labels:
+        app: app-fe
+    spec:
+      containers:
+        - name: app-fe
+          image: aksh76120/app-fe:latest
+          ports:
+            - containerPort: 80
