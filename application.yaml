@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/aksh76120/gh-cd
     targetRevision: main
-    path: k8s
+    path: .
   destination:
     server: https://kubernetes.default.svc
     namespace: default
