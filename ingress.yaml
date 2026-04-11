@@ -15,3 +15,4 @@ spec:
                 name: app-fe-service
                 port:
                   number: 80
+                  nodePort: 32445
