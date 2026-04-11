@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/aksh76120/gh-cd
+    repoURL: https://github.com/aksh76120/gh-cd.git
     targetRevision: main
     path: .
   destination:
