@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: app-fe-service
 spec:
-  type: NodePort
+  type: ClusterIP # Use ClusterIP when using Ingress; NodePort isn't necessary
   selector:
     app: app-fe
   ports:
