@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app-fe
-          image: aksh76120/app-fe:9342e8dde3221b4c2737c5cea74910de0d5cbc54
+          image: aksh76120/app-fe:d6fbd25e729231e71bcc49384c00945b802762d9
           imagePullPolicy: Always
           ports:
             - containerPort: 80
