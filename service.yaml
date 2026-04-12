@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: app-fe-service
 spec:
-  type: ClusterIP # Use ClusterIP when using Ingress; NodePort isn't necessary
+  type: NodePort
   selector:
     app: app-fe
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 80         # Port used inside the cluster
+      targetPort: 80   # Port your container listens on
+      nodePort: 32000  # External port on EC2 (must be 30000-32767)
