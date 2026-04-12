@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: app-fe.local
+    - host: app-fe.local # This is the URL you will use
       http:
         paths:
           - path: /
@@ -14,5 +14,4 @@ spec:
               service:
                 name: app-fe-service
                 port:
-                  number: 80
-                  nodePort: 32445
+                  number: 80 # Matches the 'port' in your Service
