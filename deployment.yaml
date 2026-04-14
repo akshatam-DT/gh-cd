@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: app-fe
-          image: aksh76120/app-fe:3ee2405154a83f80fdb1cd5637da94f65448d6df
+          image: aksh76120/xora:xora-v47
           imagePullPolicy: Always
           ports:
             - containerPort: 80
